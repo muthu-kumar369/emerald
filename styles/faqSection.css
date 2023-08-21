@@ -1,0 +1,96 @@
+.faq-section .left-column .image{
+    width: 100%;
+    height: 350px !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.faq-section .left-column .title{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: "Roboto", Arial, sans-serif;
+}
+.faq-section .left-column .cards .card {
+    padding: 20px;
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 25px -16px rgba(0, 0, 0, 0.36);
+}
+.faq-section .left-column .cards .card .heading{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: "Roboto", Arial, sans-serif;
+}
+.faq-section .left-column .cards .card .body-content{
+    font-family: "Roboto", Arial, sans-serif;
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999999;
+}
+.faq-section .right-column .sub-heading{
+    font-size: 13px;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #4986fc;
+    text-transform: uppercase;
+}
+.faq-section .right-column .heading{
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: rgba(0, 0, 0, 0.8);
+}
+.faq-section .right-column .faq-details .faq-detail .questions{
+    width: 100%;
+    font-weight: 600;
+    color: black;
+    padding: 15px 20px !important;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    border-radius: 0 !important;
+    margin-bottom: 10px;
+    border-radius: 4px !important;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 2px 8px -4px rgba(0, 0, 0, 0.21) !important;
+    -moz-box-shadow: 0px 2px 8px -4px rgba(0, 0, 0, 0.21) !important;
+    box-shadow: 0px 2px 8px -4px rgba(0, 0, 0, 0.21) !important;
+}
+.faq-section .right-column .faq-details .faq-detail .questions.open{
+    background-color: #4986fc;
+    color: #fff !important;
+}
+.faq-section .right-column .faq-details .faq-detail .questions .question{
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+    transition: all 0.2s ease;
+}
+.faq-section .right-column .faq-details .faq-detail .questions .icon{
+    color: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    font-weight: 600;
+}
+.faq-section .right-column .faq-details .faq-detail .questions.open .icon{
+    color: #fff !important;
+}
+.faq-section .right-column .faq-details .faq-detail .answers{
+    display: none;
+    transition: all 2s ease;
+}
+.faq-section .right-column .faq-details .faq-detail .answers.open{
+    display: block;
+}
+.faq-section .right-column .faq-details .faq-detail .answers .answer{
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);
+}

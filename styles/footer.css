@@ -1,0 +1,62 @@
+.footer{
+    padding: 6em 0 0 0;
+    background: #0e270f;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+}
+.footer .company-details {
+
+}
+.footer .company-details .body-content{
+    color: rgba(255, 255, 255, 0.9); 
+}
+.footer .company-details .social-media .icon{
+    height: 40px;
+    width: 40px;
+    display: grid;
+    place-items: center;
+    float: left;
+    color: #fff;
+    border-radius: 50%;
+    position: relative;
+    background: #4986fc;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.3 all ease-in-out;
+}
+.footer .company-details .social-media .icon:hover{
+    color: white;
+}
+.footer .menu-detail{
+
+}
+.footer .menu-detail .title,.footer .contact-details .title{
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.footer .menu-detail .menu{
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.3s all ease;
+}
+.footer .menu-detail .menu:hover{
+    color:white;
+}
+.footer .menu-detail .menu .icon{ 
+
+}
+.footer .menu-detail .menu .text{ 
+
+}
+.footer .contact-details .title{
+
+}
+.footer .contact-details .title .contact-detail{
+
+}
+.footer .contact-details .title .contact-detail .icon{
+
+}
+.footer .contact-details .title .contact-detail .text{
+
+}

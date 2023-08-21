@@ -1,0 +1,184 @@
+import Navbar from '@/components/nav/page'
+import './globals.css'
+import { Inter } from 'next/font/google';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
+import logo from '../public/images/logo.png';
+import { BiSolidChevronRight, BiMailSend, BiSolidMap,BiSolidPhone } from 'react-icons/bi';
+import {LiaCopyrightSolid} from 'react-icons/lia';
+import Footer from '@/components/footer/page';
+import ScrollToTop from '@/components/scrollToTop/page';
+const inter = Inter({ subsets: ['latin'] })
+
+export const metadata = {
+  title: 'Emerald',
+  description: 'Emerald Business solution',
+}
+const headerData = {
+  email:{
+    email:"emarald@gmail.com",
+    text:"email us : "
+  },
+  logo,
+  socialIcons: [
+    {
+      icon: <FaFacebookF />,
+      link: "#"
+    },
+    {
+      icon: <FaTwitter />,
+      link: "#"
+    },
+    {
+      icon: <FaInstagram />,
+      link: "#"
+    },
+    {
+      icon: <FaYoutube />,
+      link: "#"
+    }
+  ],
+  navmenu: [
+    {
+      name: "Home",
+      link: "/"
+    },
+    {
+      name: "About",
+      link: "/about"
+    },
+    {
+      name: "Services",
+      link: "/services"
+    },
+    {
+      name: "Portfolio",
+      link: "/portfolio"
+    },
+    {
+      name: "Blog",
+      link: "/blog"
+    },
+    {
+      name: "Contact",
+      link: "/contact"
+    }
+  ]
+}
+const footerData={
+  companyDetails:{
+    logo:{
+      image:logo,
+      link:"/"
+    },
+    body:"Far far away, behind the word mountains, far from the countries.",
+    socialMediaDetails:[<FaTwitter/>,<FaFacebookF/>,<FaInstagram/>]
+  },
+  menuDetails:[
+    {
+      title:"Company",
+      menus:[
+        {
+          icon:<BiSolidChevronRight/>,
+          text:"About"
+        },
+        {
+          icon:<BiSolidChevronRight/>,
+          text:"Services"
+        },
+        {
+          icon:<BiSolidChevronRight/>,
+          text:"Portfolio"
+        },
+        {
+          icon:<BiSolidChevronRight/>,
+          text:"Contact"
+        }
+      ]
+    },
+    {
+      title:"Information",
+      menus:[
+        {
+          icon:<BiSolidChevronRight/>,
+          text:"Join us"
+        },
+        {
+          icon:<BiSolidChevronRight/>,
+          text:"Blog"
+        },
+        {
+          icon:<BiSolidChevronRight/>,
+          text:"Privacy & Policy"
+        },
+        {
+          icon:<BiSolidChevronRight/>,
+          text:"Term & Condition"
+        }
+      ]
+    },
+    {
+      title:"Services",
+      menus:[
+        {
+          icon:<BiSolidChevronRight/>,
+          text:"Wordpress Development"
+        },
+        {
+          icon:<BiSolidChevronRight/>,
+          text:"Web Development"
+        },
+        {
+          icon:<BiSolidChevronRight/>,
+          text:"App Development"
+        },
+        {
+          icon:<BiSolidChevronRight/>,
+          text:"Marketing"
+        }
+      ]
+    }
+  ],
+  contactDetails:{
+    title:"Have a Questions?",
+    details:[
+      {
+        icon:<BiSolidMap/>,
+        text:"Nagercoil, Kanyakumari District, Tamilnadu, India"
+      },
+      {
+        icon:<BiSolidPhone/>,
+        text: "+91 9876543210"
+      },
+      {
+        icon:<BiMailSend/>,
+        email:"emerald@gmail.com"
+      }
+    ]
+  },
+  copyRight:{
+    title:"Copyright ",
+    icon:<LiaCopyrightSolid/>,
+    text:"Emerald Business solution. All Rights Reserved"
+  }
+}
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+      </head>
+      <body className={inter.className}>
+        <Navbar data={headerData} />
+        {children}
+        <ScrollToTop/>
+        <Footer data={footerData}/>
+      </body>
+    </html>
+  )
+}

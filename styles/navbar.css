@@ -1,0 +1,47 @@
+
+.nav.scroll{
+    position: fixed;
+    top:0px;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white !important;
+    color: black;
+    /* height: 75px; */
+    z-index: 2;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    transition: .3s all ease-out;
+}
+
+.nav .nav-list .nav-menus .nav-menu{
+    font-size: 15px;
+    font-weight: 500;
+}
+.nav .nav-list.scroll .nav-menus .nav-menu.active{
+    color: #4986fc;
+}
+.nav .nav-list .nav-logo a .logo{
+    width: 100px ;
+    height: 100px;
+}
+@media only screen and (min-width: 768px){
+    .nav{
+        position: absolute;
+        top: 30px;
+        width: 100%;
+        z-index: 1;
+        background-color: transparent;
+    }
+    .nav .nav-list .nav-menus .nav-menu.active{
+        color: #28df99;
+    }
+}
+@media only screen and (max-width: 767px){
+    .nav{
+        background-color: black !important;
+        padding-top: 3px;
+    }
+    .nav .nav-list .nav-menus .nav-menu.active{
+        color: #4986fc;
+    }
+    
+}

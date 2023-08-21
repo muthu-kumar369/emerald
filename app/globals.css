@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import '../styles/banner.css';
+@import '../styles/navbar.css';
+@import '../styles/serviceCard.css';
+@import '../styles/studioTwoColumn.css';
+@import '../styles/teamMemberCards.css';
+@import "../styles/countSection.css";
+@import "../styles/faqSection.css";
+@import "../styles/footer.css";
+@import "../styles/subscribeSection.css";
+@import "../styles//contactSection.css";
+@import "../styles/scrollToTop.css";
+.body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

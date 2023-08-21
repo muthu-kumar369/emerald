@@ -1,0 +1,47 @@
+.count-section{
+
+}
+.count-section .background-image{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100% !important;
+    background-attachment: fixed;   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.count-section .background-image .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    z-index: -1;
+    opacity: .8;
+    background: linear-gradient(45deg, #207ce5 0%, #6f4be8 100%);
+}
+.count-section .background-image .counts{
+
+}
+.count-section .background-image .counts .count{
+    
+}
+.count-section .background-image .counts .count .icon{
+   vertical-align: middle !important;
+}
+.count-section .background-image .counts .count .total-count{
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+    line-height: 1.8;
+}
+.count-section .background-image .counts .count .name{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
