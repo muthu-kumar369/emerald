@@ -82,19 +82,23 @@ const footerData={
       menus:[
         {
           icon:<BiSolidChevronRight/>,
-          text:"About"
+          text:"About",
+          link:"/about"
         },
         {
           icon:<BiSolidChevronRight/>,
-          text:"Services"
+          text:"Services",
+          link:"/services"
         },
         {
           icon:<BiSolidChevronRight/>,
-          text:"Portfolio"
+          text:"Portfolio",
+          link:"/portfolio"
         },
         {
           icon:<BiSolidChevronRight/>,
-          text:"Contact"
+          text:"Contact",
+          link:"/contact"
         }
       ]
     },
@@ -103,19 +107,23 @@ const footerData={
       menus:[
         {
           icon:<BiSolidChevronRight/>,
-          text:"Join us"
+          text:"Join us",
+          link:"#"
         },
         {
           icon:<BiSolidChevronRight/>,
-          text:"Blog"
+          text:"Blog",
+          link:"#"
         },
         {
           icon:<BiSolidChevronRight/>,
-          text:"Privacy & Policy"
+          text:"Privacy & Policy",
+          link:"#"
         },
         {
           icon:<BiSolidChevronRight/>,
-          text:"Term & Condition"
+          text:"Term & Condition",
+          link:"#"
         }
       ]
     },
@@ -124,19 +132,23 @@ const footerData={
       menus:[
         {
           icon:<BiSolidChevronRight/>,
-          text:"Wordpress Development"
+          text:"Wordpress Development",
+          link:"#"
         },
         {
           icon:<BiSolidChevronRight/>,
-          text:"Web Development"
+          text:"Web Development",
+          link:"#"
         },
         {
           icon:<BiSolidChevronRight/>,
-          text:"App Development"
+          text:"App Development",
+          link:"#"
         },
         {
           icon:<BiSolidChevronRight/>,
-          text:"Marketing"
+          text:"Marketing",
+          link:"#"
         }
       ]
     }
