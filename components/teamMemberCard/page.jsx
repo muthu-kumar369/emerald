@@ -18,7 +18,7 @@ const TeamMemberCards = ({ data }) => {
                         {data?.cardDetails.map((item, index) => {
                             return (
                                 <div className="team-member-card" key={index}>
-                                    <div className="image" style={{ backgroundImage: `url(${item?.image.src})`, height: `${item?.image?.height}px` }}></div>
+                                    <div className="image" style={{ backgroundImage: `url(${item?.image?.src})`, height: `${item?.image?.height}px` }}></div>
                                     <div className="content text-center py-4">
                                         <p className="name">{item?.name}</p>
                                         <p className="position">{item?.position}</p>

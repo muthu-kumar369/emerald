@@ -5,11 +5,11 @@
 /* Image column start */
 .studio-two-column .image-column .image-1 {
     width: 90%;
+    height: 100% !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     box-shadow: 0px 2px 25px -13px rgba(0, 0, 0, 0.46);
-
 }
 
 .studio-two-column .image-column .image-1 .year-details {
@@ -107,11 +107,10 @@
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 /* Content column end */
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:1024px) {
     .studio-two-column .image-column .image-1 {
         height: 400px !important;
     }
-
     .studio-two-column .image-column .image-1 .year-details {
         /* width: 25%; */
         top: 0;

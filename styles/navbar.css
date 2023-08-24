@@ -37,11 +37,13 @@
 }
 @media only screen and (max-width: 767px){
     .nav{
-        background-color: black !important;
+        background-color: whitesmoke!important;
         padding-top: 3px;
     }
     .nav .nav-list .nav-menus .nav-menu.active{
         color: #4986fc;
     }
-    
+    .nav .nav-list .nav-menus .nav-menu{
+        color: black;
+    }
 }

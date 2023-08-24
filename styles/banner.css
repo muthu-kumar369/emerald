@@ -36,6 +36,7 @@
     border-radius: 50%;
     margin: 0 5px;
     transition: background-color 0.3s ease;
+    background-color: hsl(0, 43%, 94%) !important;
     /* border: 1px double red  !important; */
   }
   /* .banner .swiper-pagination-clickable .swiper-pagination-bullet::after{

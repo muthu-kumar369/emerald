@@ -49,7 +49,7 @@ const Navbar = ({ data }) => {
                             <Image src={data?.logo} className='logo' alt="logo" width={120} height={50} />
                         </Link>
                         <div className="toggle md:hidden" onClick={()=>handleToggle()}>
-                            {toggleOpen ? <p><AiOutlineClose size={25} /></p> : <p><AiOutlineMenu size={25} /></p>}
+                            {toggleOpen ? <p><AiOutlineClose color='black' size={25} /></p> : <p><AiOutlineMenu color='black' size={25} /></p>}
                         </div>
                     </div>
                     {data?.navmenu && <div className={`nav-menus w-2/4  md:flex ${toggleOpen ? 'block' : 'hidden'}`}>
