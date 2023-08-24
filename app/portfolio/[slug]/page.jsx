@@ -1,5 +1,5 @@
 import React from 'react';
-import bannerImage from '../../../public/images/bg_2.webp';
+import bannerImage from '../../../public/image/banner_8.jpg';
 import Banner from '@/components/banner/page';
 
 const bannerDetails={
