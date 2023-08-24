@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
-import logo from '../public/images/logo.png';
+import logo from '../public/image/logo.png';
 import { BiSolidChevronRight, BiMailSend, BiSolidMap,BiSolidPhone } from 'react-icons/bi';
 import {LiaCopyrightSolid} from 'react-icons/lia';
 import Footer from '@/components/footer/page';
@@ -56,10 +56,6 @@ const headerData = {
     {
       name: "Portfolio",
       link: "/portfolio"
-    },
-    {
-      name: "Blog",
-      link: "/blog"
     },
     {
       name: "Contact",

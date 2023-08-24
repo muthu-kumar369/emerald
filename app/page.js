@@ -1,6 +1,8 @@
 import Banner from '@/components/banner/page'
-import banner1 from '../public/images/bg_1.webp';
-import banner2 from '../public/images/bg_2.webp';
+// import banner1 from '../public/images/bg_1.webp';
+// import banner2 from '../public/images/bg_2.webp';
+import banner1 from '../public/image/banner_1.jpg';
+import banner2 from '../public/image/banner_2.jpg';
 import { BiSolidChevronRight,BiHappy } from 'react-icons/bi';
 import ServiceCard from '@/components/serviceCard/page';
 import { MdDesignServices } from 'react-icons/md';
@@ -8,19 +10,23 @@ import { FaLaptopCode,FaFacebookF, FaTwitter, FaInstagram, FaGoogle,FaUserTie } 
 import { PiCertificateBold } from 'react-icons/pi';
 import { TbDeviceImacSearch, TbBulbFilled } from 'react-icons/tb';
 import { GiTeamIdea } from 'react-icons/gi';
-import about1 from '../public/images/about-1.webp';
-import about from '../public/images/about.webp';
+// import about1 from '../public/images/about-1.webp';
+// import about2 from '../public/images/about.webp';
+import about from '../public/image/about_us.jpg';
+import about1 from '../public/image/about_us_1.jpg';
 import StudioTwoColumn from '@/components/studioTwoColumn/page';
-import staff1 from '../public/images/staff-1.webp';
-import staff2 from '../public/images/staff-2.webp';
-import staff3 from '../public/images/staff-3.webp';
-import TeamMemberCards from '@/components/teamMemberCard/page';
-import bgImage from '../public/images/bg_4.webp';
+// import staff1 from '../public/images/staff-1.webp';
+// import staff2 from '../public/images/staff-2.webp';
+// import staff3 from '../public/images/staff-3.webp';
+// import TeamMemberCards from '@/components/teamMemberCard/page';
+// import bgImage from '../public/images/bg_4.webp';
+import bgImage from '../public/image/bg_cover.jpg';
 import {GoChecklist} from "react-icons/go";
 import {RiCustomerService2Line} from "react-icons/ri";
 import CountSection from '@/components/countSection/page';
 import {LuChevronDown,LuChevronUp} from 'react-icons/lu';
-import about2 from "../public/images/about-2.webp";
+// import about2 from "../public/images/about-2.webp";
+import about2 from "../public/image/faq.jpg";
 import FaqSection from '@/components/faqSection/page';
 import SubscribeSection from '@/components/subscribeSection/page';
 
@@ -115,13 +121,13 @@ const serviceCards = {
 
 const studioTwoColumn = {
   imageColumn: {
-    image1:about1,
+    image1:about,
     yearDetails: {
       icon: <TbBulbFilled />,
       count: "42",
       text: "YEAR OF EXPERIENCED"
     },
-    image2:about
+    image2:about1
   },
   contentColumn: {
     subHeading: "WELCOME TO PORTECH",
@@ -146,86 +152,86 @@ const studioTwoColumn = {
   }
 }
 
-const teamMemberCards = {
-  subHeading: "TEAM & STAFF",
-  heading: "Our Team",
-  body: "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country",
-  button: {
-    text: "View All Staff",
-    link: "/about/#team-member"
-  },
-  cardDetails: [
-    {
-      image: staff1,
-      name: "Lloyd Wilson",
-      position: "WEB DEVELOPER",
-      icons: [
-        {
-          icon: <FaTwitter />,
-          link: "#"
-        },
-        {
-          icon: <FaFacebookF />,
-          link: "#"
-        },
-        {
-          icon: <FaGoogle />,
-          link: "#"
-        },
-        {
-          icon: <FaInstagram />,
-          link: "#"
-        }
-      ]
-    },
-    {
-      image: staff2,
-      name: "Lloyd Wilson",
-      position: "WEB DEVELOPER",
-      icons: [
-        {
-          icon: <FaTwitter />,
-          link: "#"
-        },
-        {
-          icon: <FaFacebookF />,
-          link: "#"
-        },
-        {
-          icon: <FaGoogle />,
-          link: "#"
-        },
-        {
-          icon: <FaInstagram />,
-          link: "#"
-        }
-      ]
-    },
-    {
-      image: staff3,
-      name: "Lloyd Wilson",
-      position: "WEB DEVELOPER",
-      icons: [
-        {
-          icon: <FaTwitter />,
-          link: "#"
-        },
-        {
-          icon: <FaFacebookF />,
-          link: "#"
-        },
-        {
-          icon: <FaGoogle />,
-          link: "#"
-        },
-        {
-          icon: <FaInstagram />,
-          link: "#"
-        }
-      ]
-    },
-  ]
-}
+// const teamMemberCards = {
+//   subHeading: "TEAM & STAFF",
+//   heading: "Our Team",
+//   body: "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country",
+//   button: {
+//     text: "View All Staff",
+//     link: "/about/#team-member"
+//   },
+//   cardDetails: [
+//     {
+//       image: staff1,
+//       name: "Lloyd Wilson",
+//       position: "WEB DEVELOPER",
+//       icons: [
+//         {
+//           icon: <FaTwitter />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaFacebookF />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaGoogle />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaInstagram />,
+//           link: "#"
+//         }
+//       ]
+//     },
+//     {
+//       image: staff2,
+//       name: "Lloyd Wilson",
+//       position: "WEB DEVELOPER",
+//       icons: [
+//         {
+//           icon: <FaTwitter />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaFacebookF />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaGoogle />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaInstagram />,
+//           link: "#"
+//         }
+//       ]
+//     },
+//     {
+//       image: staff3,
+//       name: "Lloyd Wilson",
+//       position: "WEB DEVELOPER",
+//       icons: [
+//         {
+//           icon: <FaTwitter />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaFacebookF />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaGoogle />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaInstagram />,
+//           link: "#"
+//         }
+//       ]
+//     },
+//   ]
+// }
 
 const countSection={
   bgImage,
@@ -347,7 +353,7 @@ export default function Home() {
       <Banner data={bannerData} />
       <ServiceCard data={serviceCards} />
       <StudioTwoColumn data={studioTwoColumn} />
-      <TeamMemberCards data={teamMemberCards} />
+      {/* <TeamMemberCards data={teamMemberCards} /> */}
       <CountSection data={countSection}/>
       <FaqSection data={faqSection}/>
       <SubscribeSection data={subscribeSection}/>

@@ -1,26 +1,31 @@
 import React from 'react'
-import bannerImage from '../../public/images/bg_2.webp';
+// import bannerImage from '../../public/images/bg_2.webp';
+import bannerImage from '../../public/image/banner_3.jpg';
 import Banner from '@/components/banner/page';
 import StudioTwoColumn from '@/components/studioTwoColumn/page';
 import {TbBulbFilled} from 'react-icons/tb';
 import {GiTeamIdea} from 'react-icons/gi';
-import image1 from '../../public/images/about-1.webp';
-import image2 from '../../public/images/about.webp';
+// import image1 from '../../public/images/about-1.webp';
+// import image2 from '../../public/images/about.webp';
+import about from '../../public/image/about_us.jpg';
+import about1 from '../../public/image/about_us_1.jpg';
 import { FaFacebookF, FaTwitter, FaInstagram, FaUserTie, FaGoogle } from 'react-icons/fa';
-import staff1 from '../../public/images/staff-1.webp';
-import staff2 from '../../public/images/staff-2.webp';
-import staff3 from '../../public/images/staff-3.webp';
-import staff4 from '../../public/images/staff-4.webp';
-import staff5 from '../../public/images/staff-5.webp';
-import staff6 from '../../public/images/staff-6.webp';
-import TeamMemberCards from '@/components/teamMemberCard/page';
-import bgImage from '../../public/images/bg_4.webp';
+// import staff1 from '../../public/images/staff-1.webp';
+// import staff2 from '../../public/images/staff-2.webp';
+// import staff3 from '../../public/images/staff-3.webp';
+// import staff4 from '../../public/images/staff-4.webp';
+// import staff5 from '../../public/images/staff-5.webp';
+// import staff6 from '../../public/images/staff-6.webp';
+// import TeamMemberCards from '@/components/teamMemberCard/page';
+// import bgImage from '../../public/images/bg_4.webp';
+import bgImage from '../../public/image/bg_cover.jpg';
 import {GoChecklist} from "react-icons/go";
 import {RiCustomerService2Line} from "react-icons/ri";
 import { BiHappy } from 'react-icons/bi';
 import CountSection from '@/components/countSection/page';
 import {LuChevronDown,LuChevronUp} from 'react-icons/lu';
-import about2 from "../../public/images/about-2.webp";
+// import about2 from "../../public/images/about-2.webp";
+import about2 from "../../public/image/faq.jpg";
 import FaqSection from '@/components/faqSection/page';
 
 export const metadata={
@@ -45,13 +50,13 @@ const bannerDetails={
 
 const studioTwoColumn={
   imageColumn:{
-      image1,
+      image1:about,
       yearDetails:{
         icon:<TbBulbFilled/>,
         count:"42",
         text:"YEAR OF EXPERIENCED"
       },
-      image2
+      image2:about1
   },
   contentColumn:{
     subHeading:"WELCOME TO PORTECH",
@@ -76,153 +81,153 @@ const studioTwoColumn={
   }
 }
 
-const teamMemberCards = {
-  subHeading: "TEAM & STAFF",
-  heading: "Our Team",
-  body: "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country",
+// const teamMemberCards = {
+//   subHeading: "TEAM & STAFF",
+//   heading: "Our Team",
+//   body: "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country",
  
-  cardDetails: [
-    {
-      image: staff1,
-      name: "Lloyd Wilson",
-      position: "WEB DEVELOPER",
-      icons: [
-        {
-          icon: <FaTwitter />,
-          link: "#"
-        },
-        {
-          icon: <FaFacebookF />,
-          link: "#"
-        },
-        {
-          icon: <FaGoogle />,
-          link: "#"
-        },
-        {
-          icon: <FaInstagram />,
-          link: "#"
-        }
-      ]
-    },
-    {
-      image: staff2,
-      name: "Lloyd Wilson",
-      position: "WEB DEVELOPER",
-      icons: [
-        {
-          icon: <FaTwitter />,
-          link: "#"
-        },
-        {
-          icon: <FaFacebookF />,
-          link: "#"
-        },
-        {
-          icon: <FaGoogle />,
-          link: "#"
-        },
-        {
-          icon: <FaInstagram />,
-          link: "#"
-        }
-      ]
-    },
-    {
-      image: staff3,
-      name: "Lloyd Wilson",
-      position: "WEB DEVELOPER",
-      icons: [
-        {
-          icon: <FaTwitter />,
-          link: "#"
-        },
-        {
-          icon: <FaFacebookF />,
-          link: "#"
-        },
-        {
-          icon: <FaGoogle />,
-          link: "#"
-        },
-        {
-          icon: <FaInstagram />,
-          link: "#"
-        }
-      ]
-    },
-    {
-      image: staff4,
-      name: "Lloyd Wilson",
-      position: "WEB DEVELOPER",
-      icons: [
-        {
-          icon: <FaTwitter />,
-          link: "#"
-        },
-        {
-          icon: <FaFacebookF />,
-          link: "#"
-        },
-        {
-          icon: <FaGoogle />,
-          link: "#"
-        },
-        {
-          icon: <FaInstagram />,
-          link: "#"
-        }
-      ]
-    },
-    {
-      image: staff5,
-      name: "Lloyd Wilson",
-      position: "WEB DEVELOPER",
-      icons: [
-        {
-          icon: <FaTwitter />,
-          link: "#"
-        },
-        {
-          icon: <FaFacebookF />,
-          link: "#"
-        },
-        {
-          icon: <FaGoogle />,
-          link: "#"
-        },
-        {
-          icon: <FaInstagram />,
-          link: "#"
-        }
-      ]
-    },
-    {
-      image: staff6,
-      name: "Lloyd Wilson",
-      position: "WEB DEVELOPER",
-      icons: [
-        {
-          icon: <FaTwitter />,
-          link: "#"
-        },
-        {
-          icon: <FaFacebookF />,
-          link: "#"
-        },
-        {
-          icon: <FaGoogle />,
-          link: "#"
-        },
-        {
-          icon: <FaInstagram />,
-          link: "#"
-        }
-      ]
-    },
+//   cardDetails: [
+//     {
+//       image: staff1,
+//       name: "Lloyd Wilson",
+//       position: "WEB DEVELOPER",
+//       icons: [
+//         {
+//           icon: <FaTwitter />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaFacebookF />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaGoogle />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaInstagram />,
+//           link: "#"
+//         }
+//       ]
+//     },
+//     {
+//       image: staff2,
+//       name: "Lloyd Wilson",
+//       position: "WEB DEVELOPER",
+//       icons: [
+//         {
+//           icon: <FaTwitter />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaFacebookF />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaGoogle />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaInstagram />,
+//           link: "#"
+//         }
+//       ]
+//     },
+//     {
+//       image: staff3,
+//       name: "Lloyd Wilson",
+//       position: "WEB DEVELOPER",
+//       icons: [
+//         {
+//           icon: <FaTwitter />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaFacebookF />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaGoogle />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaInstagram />,
+//           link: "#"
+//         }
+//       ]
+//     },
+//     {
+//       image: staff4,
+//       name: "Lloyd Wilson",
+//       position: "WEB DEVELOPER",
+//       icons: [
+//         {
+//           icon: <FaTwitter />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaFacebookF />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaGoogle />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaInstagram />,
+//           link: "#"
+//         }
+//       ]
+//     },
+//     {
+//       image: staff5,
+//       name: "Lloyd Wilson",
+//       position: "WEB DEVELOPER",
+//       icons: [
+//         {
+//           icon: <FaTwitter />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaFacebookF />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaGoogle />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaInstagram />,
+//           link: "#"
+//         }
+//       ]
+//     },
+//     {
+//       image: staff6,
+//       name: "Lloyd Wilson",
+//       position: "WEB DEVELOPER",
+//       icons: [
+//         {
+//           icon: <FaTwitter />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaFacebookF />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaGoogle />,
+//           link: "#"
+//         },
+//         {
+//           icon: <FaInstagram />,
+//           link: "#"
+//         }
+//       ]
+//     },
 
-  ]
-}
+//   ]
+// }
 
 const countSection={
   bgImage,
@@ -333,7 +338,7 @@ const About = () => {
     <>
       <Banner data={bannerDetails}/>
       <StudioTwoColumn data={studioTwoColumn} />
-      <TeamMemberCards data={teamMemberCards}/>
+      {/* <TeamMemberCards data={teamMemberCards}/> */}
       <CountSection data={countSection}/>
       <FaqSection data={faqSection}/>
     </>
