@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 const Cards = ({ data }) => {
     const pathName=usePathname();
     return (
-        <sections className="cards ">
+        <sections className="cards-section">
             {data?.cardDetails && <div className='grid mx-4 md:mx-10 lg:mx-40 my-28 gap-5 grid-cols-1 lg:grid-cols-2'>
                 {data?.cardDetails.map((items, index) => {
                     return (
