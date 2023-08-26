@@ -14,6 +14,8 @@
 @import "../styles/subscribeSection.css";
 @import "../styles//contactSection.css";
 @import "../styles/scrollToTop.css";
+@import "../styles/cards.css";
+@import "../styles/projectDetails.css";
 .body{
     box-sizing: border-box;
     margin: 0;
