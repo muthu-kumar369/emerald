@@ -1,9 +1,9 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import bannerImage from '../../../public/image/banner_8.jpg';
+import bannerImage from '../../../public/image/banner_8.webp';
 import Banner from '@/components/banner/page';
-import Infinitum from "../../../public/image/infinitumfoodproducts.png";
-import Jehnsus from "../../../public/image/jehnsusmusic.png";
+import Infinitum from "../../../public/image/infinitumfoodproducts.webp";
+import Jehnsus from "../../../public/image/jehnsusmusic.webp";
 import ProjectDetails from '@/components/projectDetails';
 const bannerDetails = {
   bannerImage,
