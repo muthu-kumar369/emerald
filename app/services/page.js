@@ -1,6 +1,6 @@
 import React from 'react'
 // import bannerImage from '../../public/images/bg_2.webp';
-import bannerImage from '../../public/image/banner_4.jpg';
+import bannerImage from '../../public/image/banner_4.webp';
 import Banner from '@/components/banner/page';
 import ServiceCard from '@/components/serviceCard/page';
 import { BiSolidChevronRight } from 'react-icons/bi';
@@ -9,7 +9,7 @@ import {FaLaptopCode, FaWordpress} from 'react-icons/fa';
 import {PiCertificateBold} from 'react-icons/pi';
 import {TbDeviceImacSearch, TbDeviceAnalytics} from 'react-icons/tb';
 // import bgImage from '../../public/images/bg_4.webp';
-import bgImage from '../../public/image/bg_cover.jpg';
+import bgImage from '../../public/image/bg_cover.webp';
 import SubscribeSection from '@/components/subscribeSection/page';
 
 export const metadata={

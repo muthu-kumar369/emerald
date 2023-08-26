@@ -1,11 +1,11 @@
 import React from 'react'
 // import bannerImage from '../../public/images/bg_2.webp';
-import bannerImage from '../../public/image/banner_7.jpg';
+import bannerImage from '../../public/image/banner_7.webp';
 import Banner from '@/components/banner/page';
 import { BiMailSend, BiSolidMap,BiSolidPhone } from 'react-icons/bi';
 import ContactSection from '@/components/contactSection/page';
 // import About4 from "../../public/images/about-4.webp";
-import About4 from "../../public/image/contact_2.jpg";
+import About4 from "../../public/image/contact_2.webp";
 export const metedata={
   title:"Contact",
   description:"Contact page in emerald"

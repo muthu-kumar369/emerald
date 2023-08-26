@@ -18,7 +18,7 @@ export const metadata = {
 }
 const headerData = {
   email:{
-    email:"emarald@gmail.com",
+    email:"emerald@gmail.com",
     text:"email us : "
   },
   logo,

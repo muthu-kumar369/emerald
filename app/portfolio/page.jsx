@@ -1,11 +1,11 @@
 import React from 'react'
 // import bannerImage from '../../public/images/bg_2.webp';
-import bannerImage from '../../public/image/banner_5.jpg';
+import bannerImage from '../../public/image/banner_5.webp';
 import Banner from '@/components/banner/page';
 // import bgImage from '../../public/images/bg_4.webp';
-import bgImage from '../../public/image/bg_cover.jpg';
-import Infinitum from '../../public/image/infinitumfoodproducts.png';
-import Jenhsus from '../../public/image/jehnsusmusic.png';
+import bgImage from '../../public/image/bg_cover.webp';
+import Infinitum from '../../public/image/infinitumfoodproducts.webp';
+import Jenhsus from '../../public/image/jehnsusmusic.webp';
 import SubscribeSection from '@/components/subscribeSection/page';
 import Cards from '@/components/cards/page';
 

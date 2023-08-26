@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import bannerImage from '../../../public/image/banner_8.jpg';
+import bannerImage from '../../../public/image/banner_8.webp';
 import Banner from '@/components/banner/page';
 import Web from "../../../public/image/web.webp";
 import App from "../../../public/image/app.webp";

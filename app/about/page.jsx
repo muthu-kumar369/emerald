@@ -1,14 +1,14 @@
 import React from 'react'
 // import bannerImage from '../../public/images/bg_2.webp';
-import bannerImage from '../../public/image/banner_3.jpg';
+import bannerImage from '../../public/image/banner_3.webp';
 import Banner from '@/components/banner/page';
 import StudioTwoColumn from '@/components/studioTwoColumn/page';
 import {TbBulbFilled} from 'react-icons/tb';
 import {GiTeamIdea} from 'react-icons/gi';
 // import image1 from '../../public/images/about-1.webp';
 // import image2 from '../../public/images/about.webp';
-import about from '../../public/image/about_us.jpg';
-import about1 from '../../public/image/about_us_1.jpg';
+import about from '../../public/image/about_us.webp';
+import about1 from '../../public/image/about_us_1.webp';
 import { FaFacebookF, FaTwitter, FaInstagram, FaUserTie, FaGoogle } from 'react-icons/fa';
 // import staff1 from '../../public/images/staff-1.webp';
 // import staff2 from '../../public/images/staff-2.webp';
@@ -18,14 +18,14 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaUserTie, FaGoogle } from 'react-
 // import staff6 from '../../public/images/staff-6.webp';
 // import TeamMemberCards from '@/components/teamMemberCard/page';
 // import bgImage from '../../public/images/bg_4.webp';
-import bgImage from '../../public/image/bg_cover.jpg';
+import bgImage from '../../public/image/bg_cover.webp';
 import {GoChecklist} from "react-icons/go";
 import {RiCustomerService2Line} from "react-icons/ri";
 import { BiHappy } from 'react-icons/bi';
 import CountSection from '@/components/countSection/page';
 import {LuChevronDown,LuChevronUp} from 'react-icons/lu';
 // import about2 from "../../public/images/about-2.webp";
-import about2 from "../../public/image/faq.jpg";
+import about2 from "../../public/image/faq.webp";
 import FaqSection from '@/components/faqSection/page';
 
 export const metadata={
