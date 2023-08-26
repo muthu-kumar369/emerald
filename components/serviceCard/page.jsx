@@ -1,7 +1,10 @@
+"use client"
 import Link from 'next/link'
-import React from 'react'
+import React from 'react';
+import { usePathname } from 'next/navigation';
 
 const ServiceCard = ({ data }) => {
+    const path=usePathname();
     return (
         <section className='service-card-section pb-10'>
             {data?.home && <div className="service-cards-home">
@@ -31,7 +34,10 @@ const ServiceCard = ({ data }) => {
                                 <p className="icon text-5xl">{item?.icon}</p>
                                 <p className="card-heading mt-3">{item?.heading}</p>
                                 <p className="body-content mt-5 ">{item?.body}</p>
-                                <Link href={`#`} className={`${item?.button?.class == 'rounded' ? 'button-rounded' : 'button'}`}>{item?.button.text}</Link>
+                                {item?.path ? 
+                                <Link href={`${path}/${item?.button?.link}`} className={`${item?.button?.class == 'rounded' ? 'button-rounded' : 'button'}`}>{item?.button.text}</Link> :
+                                <Link href={`/${item?.button?.link}`} className={`${item?.button?.class == 'rounded' ? 'button-rounded' : 'button'}`}>{item?.button.text}</Link>
+                                }
                             </div>
                         )
                     })}

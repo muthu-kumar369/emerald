@@ -5,10 +5,10 @@ import banner1 from '../public/image/banner_1.jpg';
 import banner2 from '../public/image/banner_2.jpg';
 import { BiSolidChevronRight,BiHappy } from 'react-icons/bi';
 import ServiceCard from '@/components/serviceCard/page';
-import { MdDesignServices } from 'react-icons/md';
-import { FaLaptopCode,FaFacebookF, FaTwitter, FaInstagram, FaGoogle,FaUserTie } from 'react-icons/fa';
+import { MdDesignServices, MdDeveloperMode } from 'react-icons/md';
+import { FaLaptopCode,FaFacebookF, FaTwitter, FaInstagram, FaGoogle,FaUserTie, FaWordpress } from 'react-icons/fa';
 import { PiCertificateBold } from 'react-icons/pi';
-import { TbDeviceImacSearch, TbBulbFilled } from 'react-icons/tb';
+import {  TbBulbFilled, TbDeviceAnalytics } from 'react-icons/tb';
 import { GiTeamIdea } from 'react-icons/gi';
 // import about1 from '../public/images/about-1.webp';
 // import about2 from '../public/images/about.webp';
@@ -77,18 +77,8 @@ const serviceCards = {
   home: true,
   cardDetails: [
     {
-      icon: <MdDesignServices />,
-      heading: 'UX/UI Design',
-      body: 'A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.',
-      button: {
-        text: <BiSolidChevronRight />,
-        class: 'rounded',
-        link:"services"
-      }
-    },
-    {
       icon: <FaLaptopCode />,
-      heading: 'Development',
+      heading: 'Web Development',
       body: 'A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.',
       button: {
         text: <BiSolidChevronRight />,
@@ -97,9 +87,9 @@ const serviceCards = {
       }
     },
     {
-      icon: <PiCertificateBold />,
-      heading: 'Branding',
-      body: 'A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. ',
+      icon: <MdDeveloperMode/>,
+      heading: 'App Development',
+      body: 'A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.',
       button: {
         text: <BiSolidChevronRight />,
         class: 'rounded',
@@ -107,8 +97,18 @@ const serviceCards = {
       }
     },
     {
-      icon: <TbDeviceImacSearch />,
-      heading: 'Search Optimization',
+      icon: <FaWordpress />,
+      heading: 'Wordpress Development',
+      body: 'A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.',
+      button: {
+        text: <BiSolidChevronRight />,
+        class: 'rounded',
+        link:"services"
+      }
+    },
+    {
+      icon: <TbDeviceAnalytics />,
+      heading: 'Marketing',
       body: 'A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.',
       button: {
         text: <BiSolidChevronRight />,
