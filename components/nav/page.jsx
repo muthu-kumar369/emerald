@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { useState, useEffect } from 'react';
-import { useRouter, usePathname } from 'next/navigation';
+import {usePathname } from 'next/navigation';
 import Image from 'next/image';
 const Navbar = ({ data }) => {
 

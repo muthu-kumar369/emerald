@@ -4,7 +4,10 @@ import bannerImage from '../../public/image/banner_5.jpg';
 import Banner from '@/components/banner/page';
 // import bgImage from '../../public/images/bg_4.webp';
 import bgImage from '../../public/image/bg_cover.jpg';
+import Infinitum from '../../public/image/infinitumfoodproducts.png';
+import Jenhsus from '../../public/image/jehnsusmusic.png';
 import SubscribeSection from '@/components/subscribeSection/page';
+import Cards from '@/components/cards/page';
 
 export const metadata={
   title:"Portfolio",
@@ -24,6 +27,23 @@ const bannerDetails={
   heading:"Portfolio",
   banner:true
 }
+const card={
+  project:true,
+  cardDetails:[
+    {
+      image:Infinitum,
+      subHeading:"Infinitum Foods Produts",
+      heading:"Wordpress development",
+      link:"infinitum"
+    },
+    {
+      image:Jenhsus,
+      subHeading:"Jehnsus Music",
+      heading:"Wordpress development",
+      link:"jehnsus"
+    }
+  ]
+}
 const subscribeSection={
   bgImage,
   heading:"Subscribe to our Newsletter",
@@ -39,6 +59,7 @@ const Portfolio = () => {
   return (
     <>
     <Banner data={bannerDetails}/>
+    <Cards data={card} />
     <SubscribeSection data={subscribeSection}/>
     </>
   )

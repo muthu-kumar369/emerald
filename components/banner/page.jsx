@@ -5,7 +5,7 @@ import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
 import Link from 'next/link';
 import { BsFillPlayFill } from 'react-icons/bs';
 import { BiSolidChevronRight } from 'react-icons/bi';
-const Banner = ({ data }) => {
+const Banner = ({ data, bannerNav,heading }) => {
     return (
         <section className="banner">
             {data?.slider && <div className="banner-slider">
@@ -61,21 +61,24 @@ const Banner = ({ data }) => {
                     {data?.bannerDetails && <div className='banner-nav flex'>
                         {data?.bannerDetails.map((item, index) => {
                             return (
-                                <div>{item?.link ? <div className='flex banner-nav-link'>
+                                <div key={index}>{item?.link ? <div className='flex banner-nav-link'>
                                     <Link href={`${item.link}`} >
                                         {item?.text}
                                     </Link>
-                                    <BiSolidChevronRight size={24}/>
+                                    <BiSolidChevronRight size={24} />
                                 </div> :
                                     <div className='flex'>
                                         <p>{item?.text}</p>
-                                        <BiSolidChevronRight size={24}/>
                                     </div>
                                 }</div>
                             )
                         })}
+                        {bannerNav && <div className='flex'>
+                            <p>{bannerNav}</p>
+                        </div>}
                     </div>}
-                    <p className='heading'>{data?.heading}</p>
+                    {data?.heading && <p className='heading'>{data?.heading}</p>}
+                    {heading && <p className='heading'>{heading}</p>}
                 </div>
             </div>}
         </section>
