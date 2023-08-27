@@ -3,7 +3,7 @@ import React from 'react'
 
 const StudioTwoColumn = ({ data }) => {
     return (
-        <section className="studio-two-column mx-5 md:mx-20 lg:mx-40 my-28">
+        <section className="studio-two-column mx-5 md:mx-14 xl:mx-40 my-28">
             <div className="grid lg:grid-cols-2">
                 {data?.imageColumn?.image1 && <div className='image-column mx-16 md:mx-1 -mt-12'>
                     <div className="image-1" style={{ backgroundImage: `url(${data?.imageColumn?.image1.src})`, height: `${data?.imageColumn?.image1.height}px` }}>
@@ -17,7 +17,7 @@ const StudioTwoColumn = ({ data }) => {
                 </div>}
                 {data?.contentColumn && <div className='content-column ml-10 mt-28 lg:mt-1'>
                     <p className="sub-heading uppercase">{data?.contentColumn?.subHeading}</p>
-                    <p className="heading">{data?.contentColumn?.heading}</p>
+                    <p className="heading text-2xl md:text-3xl">{data?.contentColumn?.heading}</p>
                     <p className="body-content pt-6">{data?.contentColumn?.body}</p>
                     {data?.contentColumn?.iconSection && <div className='icon-sections grid md:grid-cols-2'>
                         {data?.contentColumn?.iconSection.map((item, index) => {

@@ -8,7 +8,7 @@ const inputSchema = yup.object().shape({
 })
 const SubscribeSection = ({ data }) => {
   return (
-    <section className="subscribe-section mx-5 md:mx-10 lg:mx-40 py-20">
+    <section className="subscribe-section mx-5 md:mx-14 xl:mx-40 py-20">
       <div className="image " style={{ backgroundImage: `url(${data?.bgImage?.src})`, height: `${data?.bgImage?.height}px` }}>
         <div className="overlay"></div>
         <div className="content">

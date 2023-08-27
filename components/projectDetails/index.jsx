@@ -1,10 +1,9 @@
 import React from 'react'
-import Image from 'next/image';
 import Link from 'next/link';
 
 const ProjectDetails = ({data}) => {
   return (
-    <section className="project-details mx-4 md:mx-10 lg:mx-40 my-28">
+    <section className="project-details mx-4 md:mx-14 xl:mx-40 my-28">
         {data?.image && <div style={{backgroundImage:`url(${data?.image?.src})`, height:`${data?.image?.height}px`}} className='image'/>}
         {data?.subHeading && <p className='sub-heading mt-7 '>{data?.subHeading}</p>} 
         {data?.heading && <p className='heading mt-4'>{data?.heading}</p>}

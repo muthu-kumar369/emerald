@@ -13,7 +13,7 @@ const Contact = ({ data }) => {
 
 
     return (
-        <section className="contact mx-5 md:mx-10 lg:mx-40 lg:py-20">
+        <section className="contact mx-5 md:mx-14 xl:mx-40 lg:py-20">
             {data?.contactDetails && <div className='contact-details grid lg:grid-cols-3'>
                 {data?.contactDetails.map((item, index) => {
                     return (

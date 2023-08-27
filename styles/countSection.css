@@ -22,8 +22,8 @@
     opacity: .8;
     background: linear-gradient(45deg, #207ce5 0%, #6f4be8 100%);
 }
-.count-section .background-image .counts{
-
+.count-section .background-image .quote{
+    line-height: 1.5;
 }
 .count-section .background-image .counts .count{
     

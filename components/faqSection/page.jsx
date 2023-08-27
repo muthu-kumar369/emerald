@@ -1,7 +1,8 @@
 "use client"
+import Link from 'next/link';
 import React, { useState } from 'react'
 
-const FaqSection = ({data}) => {
+const FaqSection = ({ data }) => {
 
     const [open, setOpen] = useState(0);
 
@@ -14,25 +15,29 @@ const FaqSection = ({data}) => {
         }
     }
     return (
-        <section className="faq-section grid lg:grid-cols-2 mx-2 md:mx-10 lg:mx-40 my-28">
-            <div className="left-column lg:mx-9">
-                <div className="image" style={{ backgroundImage: `url(${data?.leftColumn?.image?.src})`, height: `${data?.leftColumn?.image?.height}px` }}></div>
-                <p className="title my-5">{data?.leftColumn?.title}</p>
-                {data?.leftColumn?.cardDetails && <div className='cards'>
-                    {data?.leftColumn?.cardDetails.map((item, index) => {
-                        return (
-                            <div className="card ml-3 md:ml-6" key={index}>
-                                <p className="heading">{item?.heading}</p>
-                                <p className="body-content mt-2">{item?.body}</p>
-                            </div>
-                        )
-                    })}
-                </div>}
+        <section className="faq-section mx-2 md:mx-14 xl:mx-40 my-28">
+            <div id='why-choose' className="left-column lg:mx-9 grid lg:grid-cols-2">
+                <div className=''>
+                    <p className="sub-heading">{data?.leftColumn?.subHeading}</p>
+                    <p className="heading mb-5 text-2xl md:text-3xl">{data?.leftColumn?.title}</p>
+                    {data?.leftColumn?.cardDetails && <div className='cards mb-5'>
+                        {data?.leftColumn?.cardDetails.map((item, index) => {
+                            return (
+                                <div className="card ml-3 md:ml-6" key={index}>
+                                    <p className="heading">{item?.heading}</p>
+                                    <p className="body-content mt-2">{item?.body}</p>
+                                </div>
+                            )
+                        })}
+                    </div>}
+                    {data?.leftColumn?.button && <Link href={data?.leftColumn?.button?.link} className='button'>{data?.leftColumn?.button?.text}</Link>}
+                </div>
+                <div className="image lg:px-3 lg:pl-5" style={{ backgroundImage: `url(${data?.leftColumn?.image?.src})`, height: `${data?.leftColumn?.image?.height}px` }}></div>
             </div>
-            <div className="right-column lg:mx-5 mt-8 lg:mt-20">
-                <p className="sub-heading">{data?.rightColumn?.subHeading}</p>
-                <p className="heading">{data?.rightColumn?.heading}</p>
-                {data?.rightColumn?.faqDetails && <div className='faq-details'>
+            <div id='faq' className="right-column lg:mx-5 mt-8 lg:mt-28">
+                <p className="sub-heading ">{data?.rightColumn?.subHeading}</p>
+                <p className="heading text-2xl md:text-3xl">{data?.rightColumn?.heading}</p>
+                {data?.rightColumn?.faqDetails && <div className='faq-details mb-5'>
                     {data?.rightColumn?.faqDetails.map((faq, index) => {
                         return (
                             <div className="faq-detail" key={index}>
@@ -43,7 +48,7 @@ const FaqSection = ({data}) => {
                                 {faq?.answer && <div className={`answers mt-7 ${index == open ? 'open' : ''}`}>
                                     {faq?.answer.map((answer, i) => {
                                         return (
-                                            <p className="answer pl-5 mt-3" key={i}><span className="number pr-2">{i+1}.</span>{answer}</p>
+                                            <p className="answer pl-5 mt-3" key={i}><span className="number pr-2">{i + 1}.</span>{answer}</p>
                                         )
                                     })}
                                 </div>}
@@ -51,6 +56,7 @@ const FaqSection = ({data}) => {
                         )
                     })}
                 </div>}
+                {data?.rightColumn?.button && <Link href={data?.rightColumn?.button?.link} className='button'>{data?.rightColumn?.button?.text}</Link>}
             </div>
         </section>
     )

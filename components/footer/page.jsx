@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Footer = ({ data }) => {
     return (
         <section className="footer pb-20">
-            <div className="grid md:grid-cols-3 lg:grid-cols-5 mx-5 md:mx-10 lg:mx-40">
+            <div className="grid md:grid-cols-3 lg:grid-cols-5 mx-5 md:mx-14 xl:mx-40">
                 {data?.companyDetails && <div className='company-details -mt-4'>
                     <Link href={`${data?.companyDetails?.logo?.link}`}><Image src={data?.companyDetails?.logo?.image} width={120} height={50}></Image></Link>
                     <p className="body-content">{data?.companyDetails?.body}</p>
