@@ -8,7 +8,7 @@ const ServiceCard = ({ data }) => {
     return (
         <section className='service-card-section pb-10'>
             {data?.home && <div className="service-cards-home">
-                {data?.cardDetails && <div className='lg:ml-56 grid lg:grid-cols-4'>
+                {data?.cardDetails && <div className='xl:ml-56 grid lg:grid-cols-4'>
                     {data?.cardDetails.map((item, index) => {
                         return (
                             <div className="service-card mx-4" key={index}>
@@ -24,7 +24,7 @@ const ServiceCard = ({ data }) => {
                     {data?.cardButton?.text}
                     </Link>}
             </div>}
-            {data?.service && <div className='service-card-service py-24 mx-5 md:mx-48'>
+            {data?.service && <div className='service-card-service py-24 mx-5 md:mx-14 xl:mx-48'>
                 <p className="title text-center">{data?.title}</p>
                 <p className="heading text-center">{data?.heading}</p>
             {data?.cardDetails && <div className=' grid lg:grid-cols-3 gap-8 py-16'>

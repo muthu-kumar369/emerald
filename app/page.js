@@ -3,7 +3,7 @@ import Banner from '@/components/banner/page'
 // import banner2 from '../public/images/bg_2.webp';
 import banner1 from '../public/image/banner_1.webp';
 import banner2 from '../public/image/banner_2.webp';
-import { BiSolidChevronRight,BiHappy } from 'react-icons/bi';
+import { BiSolidChevronRight,BiHappy, BiSolidQuoteLeft, BiSolidQuoteRight } from 'react-icons/bi';
 import ServiceCard from '@/components/serviceCard/page';
 import { MdDesignServices, MdDeveloperMode } from 'react-icons/md';
 import { FaLaptopCode,FaFacebookF, FaTwitter, FaInstagram, FaGoogle,FaUserTie, FaWordpress } from 'react-icons/fa';
@@ -34,9 +34,9 @@ const bannerData = {
   bannerDetails: [
     {
       image: banner1,
-      subHeading: "Welcome to Portech",
-      heading: "We Create Website the Way You Want with Portech",
-      content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      subHeading: "Emerald Enchantment",
+      heading: "We tailor website creation to your preferences.",
+      content: "Transforming Visions into Tailored Websites - Your Dream, Our Design. Craft your unique digital footprint with us today.",
       button: [
         {
           text: "contact us",
@@ -53,9 +53,9 @@ const bannerData = {
     ,
     {
       image: banner2,
-      subHeading: "Creative Portfolio",
-      heading: "We Provide Effective for Business Solutions",
-      content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      subHeading: "Innovative Anthology",
+      heading: "We Deliver Efficient Business Solutions",
+      content: "Unveiling impactful business solutions crafted for your success. Partner with us to elevate your business strategies and outcomes.",
       button: [
         {
           text: "contact us",
@@ -79,7 +79,7 @@ const serviceCards = {
     {
       icon: <FaLaptopCode />,
       heading: 'Web Development',
-      body: 'A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.',
+      body: 'Leveraging cutting-edge tech, we craft responsive, stunning websites. From user-friendly interfaces to robust backends, we bring your digital presence to life.',
       button: {
         text: <BiSolidChevronRight />,
         class: 'rounded',
@@ -89,7 +89,7 @@ const serviceCards = {
     {
       icon: <MdDeveloperMode/>,
       heading: 'App Development',
-      body: 'A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.',
+      body: 'Our App Development crafts user-centric mobile applications. With a keen grasp of user behavior and tech trends, we ensure flawless functionality and lasting impact.',
       button: {
         text: <BiSolidChevronRight />,
         class: 'rounded',
@@ -99,7 +99,7 @@ const serviceCards = {
     {
       icon: <FaWordpress />,
       heading: 'Wordpress Development',
-      body: 'A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.',
+      body: 'From design finesse to seamless functionality, we specialize in crafting tailored WordPress solutions. Partner with us to amplify your digital impact.',
       button: {
         text: <BiSolidChevronRight />,
         class: 'rounded',
@@ -109,7 +109,7 @@ const serviceCards = {
     {
       icon: <TbDeviceAnalytics />,
       heading: 'Marketing',
-      body: 'A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.',
+      body: 'Our team specializes in crafting tailored strategies that resonate, from creative campaigns to digital outreach. Partner with us to reach the right audience and achieve remarkable growth.',
       button: {
         text: <BiSolidChevronRight />,
         class: 'rounded',
@@ -122,17 +122,17 @@ const serviceCards = {
 const studioTwoColumn = {
   imageColumn: {
     image1:about,
-    yearDetails: {
-      icon: <TbBulbFilled />,
-      count: "42",
-      text: "YEAR OF EXPERIENCED"
-    },
+    // yearDetails: {
+    //   icon: <TbBulbFilled />,
+    //   count: "42",
+    //   text: "YEAR OF EXPERIENCED"
+    // },
     image2:about1
   },
   contentColumn: {
-    subHeading: "WELCOME TO PORTECH",
-    heading: "We Are Portech Creative Studio Agency",
-    body: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    subHeading: "WELCOME TO EMERALD",
+    heading: "Revealing the Emerald Narrative that Our Identity and Principles",
+    body: "Emerald Business Solutions is more than a company – we are your partners in growth. With a commitment to quality, innovation, and collaboration, we navigate the digital landscape to turn challenges into opportunities and ideas into realities. Let's embark on this journey together and shape a future where your brand shines brightest.",
     iconSection: [
       {
         icon: <GiTeamIdea />,
@@ -146,8 +146,8 @@ const studioTwoColumn = {
       }
     ],
     button: {
-      text: "Get in touch with us",
-      link: "/contact"
+      text: "Know more about us",
+      link: "/about"
     }
   }
 }
@@ -235,105 +235,119 @@ const studioTwoColumn = {
 
 const countSection={
   bgImage,
-  countDetails:[
-    {
-      icon:<GoChecklist/>,
-      totalCount:"4,800",
-      name:"PROJECT COMPLETED"
-    },
-    {
-      icon:<FaUserTie/>,
-      totalCount:"1,000",
-      name:"OUR STAFF"
-    },
-    {
-      icon:<RiCustomerService2Line/>,
-      totalCount:"350",
-      name:"SERVICES PROVIDE"
-    },
-    {
-      icon:<BiHappy/>,
-      totalCount:"7,650",
-      name:"HAPPY CUSTOMERS"
-    },
-  ]
+  // countDetails:[
+  //   {
+  //     icon:<GoChecklist/>,
+  //     totalCount:"4,800",
+  //     name:"PROJECT COMPLETED"
+  //   },
+  //   {
+  //     icon:<FaUserTie/>,
+  //     totalCount:"1,000",
+  //     name:"OUR STAFF"
+  //   },
+  //   {
+  //     icon:<RiCustomerService2Line/>,
+  //     totalCount:"350",
+  //     name:"SERVICES PROVIDE"
+  //   },
+  //   {
+  //     icon:<BiHappy/>,
+  //     totalCount:"7,650",
+  //     name:"HAPPY CUSTOMERS"
+  //   },
+  // ],
+  quote:{
+    right:<BiSolidQuoteLeft/>,
+    left:<BiSolidQuoteRight/>,
+    text:'"Cultivating Growth: Enriching Customers Through Profit Delivery"'
+  }
 }
 const faqSection={
   leftColumn:{
       image:about2,
+      subHeading:"Why us",
       title:"Why Choose Us for Your Next Project?",
       cardDetails:[
         {
-          heading:"Creative Ideas",
-          body:"A small river named Duden flows by their place and supplies it with the necessary regelialia."
+          heading:"Holistic Impact",
+          body:" By choosing us, you're not only choosing exceptional digital solutions but also contributing to meaningful educational initiatives that uplift communities."
         },
         {
-          heading:"Better Strategy with High Quality Business",
-          body:"A small river named Duden flows by their place and supplies it with the necessary regelialia."
+          heading:"Partnership in Progress",
+          body:"We don't just serve clients; we form partnerships. We align our strategies with your goals, working together towards mutual success."
         }
-      ]
+      ],
+      button:{
+        text:"Know more",
+        link:"/about/#why-choose"
+      }
   },
   rightColumn:{
     subHeading:"Freequesntly Ask Question",
     heading:"Frequently Ask Question",
     faqDetails:[
       {
-        question:"How to fixed a problem?",
+        question:"What services does your company offer?",
         icon:{
           up:<LuChevronUp/>,
           down:<LuChevronDown/>
         },
         answer:[
-          "Far far away, behind the word mountains",
-          "Consonantia, there live the blind texts",
-          "When she reached the first hills of the Italic Mountains",
-          "Bookmarksgrove, the headline of Alphabet Village",
-          "Separated they live in Bookmarksgrove right"
+          "We specialize in a range of services including web development, app development, WordPress solutions, marketing, and branding.",
+          "Our dedicated team covers every aspect of your digital needs."
         ]
       },
       {
-        question:"How to manage your Website?",
+        question:"What types of websites do you develop?",
         icon:{
           up:<LuChevronUp/>,
           down:<LuChevronDown/>
         },
         answer:[
-          "Far far away, behind the word mountains",
-          "Consonantia, there live the blind texts",
-          "When she reached the first hills of the Italic Mountains",
-          "Bookmarksgrove, the headline of Alphabet Village",
-          "Separated they live in Bookmarksgrove right"
+          "We craft a diverse range of websites, from simple portfolios to complex e-commerce platforms.",
+          "Our web development caters to your unique requirements, ensuring functionality, aesthetics, and user experience are seamlessly integrated.",
         ]
       },
       {
-        question:"How to grow your investments funds?",
+        question:"Can you create custom mobile applications?",
         icon:{
           up:<LuChevronUp/>,
           down:<LuChevronDown/>
         },
         answer:[
-          "Far far away, behind the word mountains",
-          "Consonantia, there live the blind texts",
-          "When she reached the first hills of the Italic Mountains",
-          "Bookmarksgrove, the headline of Alphabet Village",
-          "Separated they live in Bookmarksgrove right"
+          "Absolutely. Our app development team excels at creating custom mobile applications for various platforms.",
+          "We combine user-centric design with cutting-edge technology to deliver apps that stand out in the competitive landscape.",
         ]
       },
       {
-        question:"What are those requirements for businesses?",
+        question:"What makes your WordPress development stand out?",
         icon:{
           up:<LuChevronUp/>,
           down:<LuChevronDown/>
         },
         answer:[
-          "Far far away, behind the word mountains",
-          "Consonantia, there live the blind texts",
-          "When she reached the first hills of the Italic Mountains",
-          "Bookmarksgrove, the headline of Alphabet Village",
-          "Separated they live in Bookmarksgrove right"
+          "Our WordPress development is tailored to your vision.",
+          "We specialize in creating responsive, user-friendly websites that align with your brand identity.",
+          "Whether you need a blog, business site, or e-commerce platform, we've got you covered.",
+        ]
+      },
+      {
+        question:"How can your marketing services benefit my business?",
+        icon:{
+          up:<LuChevronUp/>,
+          down:<LuChevronDown/>
+        },
+        answer:[
+          "Our marketing services are designed to boost your online presence and engagement. ",
+          "We develop strategic campaigns that target your audience effectively, utilizing both digital and traditional marketing techniques to enhance your brand's visibility.",
         ]
       }
-    ]
+    ],
+    button:{
+      text:"View more",
+      link:"/about/#faq"
+    }
   }
 }
 const subscribeSection={

@@ -36,7 +36,7 @@ const Banner = ({ data, bannerNav,heading }) => {
 
                                             </Link>
                                         </div>
-                                        <div className="banner-content text-white lg:mr-36 mx-3">
+                                        <div className="banner-content text-white xl:mr-36 mx-3">
                                             <p className="sub-heading uppercase">{item?.subHeading}</p>
                                             <p className="heading font-black uppercase">{item?.heading}</p>
                                             <p className="body-content">{item?.content}</p>
