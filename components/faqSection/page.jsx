@@ -24,7 +24,10 @@ const FaqSection = ({ data }) => {
                         {data?.leftColumn?.cardDetails.map((item, index) => {
                             return (
                                 <div className="card ml-3 md:ml-6" key={index}>
-                                    <p className="heading">{item?.heading}</p>
+                                    <div className='heading-div'>
+                                        <p className="heading">{item?.heading}</p>
+                                        <p className="line"></p>
+                                    </div>
                                     <p className="body-content mt-2">{item?.body}</p>
                                 </div>
                             )
