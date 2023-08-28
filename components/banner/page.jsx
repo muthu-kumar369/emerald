@@ -82,8 +82,8 @@ const Banner = ({ data, bannerNav, heading }) => {
                             <p>{bannerNav}</p>
                         </div>}
                     </div>}
-                    {data?.heading && <p className='heading'>{data?.heading}</p>}
-                    {heading && <p className='heading'>{heading}</p>}
+                    {data?.heading && <p className='heading text-3xl md:text-5xl'>{data?.heading}</p>}
+                    {heading && <p className='heading text-3xl md:text-5xl'>{heading}</p>}
                 </div>
             </div>}
         </section>
