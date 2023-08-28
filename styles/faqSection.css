@@ -26,12 +26,24 @@
     border-radius: 4px;
     box-shadow: 0px 2px 25px -16px rgba(0, 0, 0, 0.36);
 }
+.faq-section .left-column .cards .card .heading-div{
+    width: fit-content;
+}
 .faq-section .left-column .cards .card .heading{
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.5;
     color: rgba(0, 0, 0, 0.8);
     font-family: "Roboto", Arial, sans-serif;
+}
+.faq-section .left-column .cards .card .line{
+    width: 50%;
+    height: 3px;
+    background-color:rgb(2, 83, 5);
+    transition: 0.3s all ease-in-out;
+}
+.faq-section .left-column .cards .card:hover .line{
+    width: 100% ;
 }
 .faq-section .left-column .cards .card .body-content{
     font-family: "Roboto", Arial, sans-serif;
@@ -73,6 +85,10 @@
     -webkit-box-shadow: 0px 2px 8px -4px rgba(0, 0, 0, 0.21) !important;
     -moz-box-shadow: 0px 2px 8px -4px rgba(0, 0, 0, 0.21) !important;
     box-shadow: 0px 2px 8px -4px rgba(0, 0, 0, 0.21) !important;
+    transition: 0.9 all ease-in-out;
+}
+.faq-section .right-column .faq-details .faq-detail .questions:hover{
+    box-shadow: 0px 2px 8px -4px rgba(0.1, 0.1, 0.1, 0.41) !important;
 }
 .faq-section .right-column .faq-details .faq-detail .questions.open{
     background-color: #4986fc;
