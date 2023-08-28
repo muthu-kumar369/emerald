@@ -132,7 +132,9 @@ const studioTwoColumn = {
   contentColumn: {
     subHeading: "WELCOME TO EMERALD",
     heading: "Revealing the Emerald Narrative that Our Identity and Principles",
-    body: "Emerald Business Solutions is more than a company – we are your partners in growth. With a commitment to quality, innovation, and collaboration, we navigate the digital landscape to turn challenges into opportunities and ideas into realities. Let's embark on this journey together and shape a future where your brand shines brightest.",
+    body: [
+      "Emerald Business Solutions is more than a company – we are your partners in growth. With a commitment to quality, innovation, and collaboration, we navigate the digital landscape to turn challenges into opportunities and ideas into realities. Let's embark on this journey together and shape a future where your brand shines brightest.",
+    ],
     iconSection: [
       {
         icon: <GiTeamIdea />,
@@ -266,7 +268,7 @@ const countSection={
 const faqSection={
   leftColumn:{
       image:about2,
-      subHeading:"Why us",
+      subHeading:"Why Select Our Expertise",
       title:"Why Choose Us for Your Next Project?",
       cardDetails:[
         {

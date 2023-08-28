@@ -136,9 +136,22 @@
     color: white;
 }
 .banner .banner-image .banner-content .heading{
-    font-size: 50px;
     line-height: 1.2;
     font-weight: 700;
+}
+.banner .banner-image .banner-content .body-content{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.banner .banner-image .banner-content .button{
+    background-color: #4986fc;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding:12px;
+    border-radius: 5px;
 }
 .banner .banner-image .banner-content .banner-nav{
     font-size: 16px;

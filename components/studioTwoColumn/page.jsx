@@ -18,7 +18,13 @@ const StudioTwoColumn = ({ data }) => {
                 {data?.contentColumn && <div className='content-column ml-10 mt-28 lg:mt-1'>
                     <p className="sub-heading uppercase">{data?.contentColumn?.subHeading}</p>
                     <p className="heading text-2xl md:text-3xl">{data?.contentColumn?.heading}</p>
-                    <p className="body-content pt-6">{data?.contentColumn?.body}</p>
+                   {data?.contentColumn?.body && <div>
+                        {data?.contentColumn?.body.map((item,index)=>{
+                            return(
+                                <p key={index} className="body-content pt-6">{item}</p>
+                            )
+                        })}
+                    </div>} 
                     {data?.contentColumn?.iconSection && <div className='icon-sections grid md:grid-cols-2'>
                         {data?.contentColumn?.iconSection.map((item, index) => {
                             return (
