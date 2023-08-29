@@ -26,7 +26,7 @@ const ProjectDetails = ({ data }) => {
           <p className="sub-heading">{data?.contentHeader?.subHeading}</p>
           <p className="heading">{data?.contentHeader?.heading}</p>
           </div>}
-      {data?.content && <div className={`mt-10 ${data?.service ? "grid md:grid-cols-2 gap-5":""}`}>
+      {data?.content && <div className={`mt-10 mb-10 ${data?.service ? "grid md:grid-cols-2 gap-5":""}`}>
         {data?.content.map((item, index) => {
           return (
             <p className='content mb-5' key={index}>{item?.boldText && <span className='bold'>{item?.boldText}</span>}{item?.text ? item?.text : item}</p>

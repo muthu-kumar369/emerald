@@ -15,7 +15,7 @@ const FaqSection = ({ data }) => {
         }
     }
     return (
-        <section className="faq-section mx-2 md:mx-14 xl:mx-40 my-28">
+        <section className="faq-section mx-2 md:mx-14 xl:mx-40 my-28 mb-32">
             <div id='why-choose' className="left-column lg:mx-9 grid lg:grid-cols-2">
                 <div className=''>
                     <p className="sub-heading">{data?.leftColumn?.subHeading}</p>

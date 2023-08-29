@@ -58,10 +58,13 @@ const Banner = ({ data, bannerNav, heading, bannerContent }) => {
             {data?.banner && <div className='banner-image' style={{ backgroundImage: `url(${data?.bannerImage.src})`, height: `${data?.bannerImage.height}px` }}>
                 <div className="home-banner overlay"></div>
                 <div className="banner-content">
-                    {data?.content && <div className='md:w-2/4'>
-                        <p className="heading text-3xl lg:text-5xl ">{data?.content?.heading}</p>
+                    {data?.content && <div className='md:w-3/4 xl:w-2/4'>
+                        <p className="heading text-3xl md:text-4xl xl:text-5xl ">{data?.content?.heading}</p>
                         <p className="body-content py-5">{data?.content?.content}</p>
-                        <Link href={`${data?.content?.button?.link}`} className="button uppercase">{data?.content?.button?.text}</Link>
+                        <Link href={`${data?.content?.button?.link}`} className="button uppercase" onClick={(e)=>{
+                             {data?.content?.button?.smooth && e.preventDefault();}
+                             {data?.content?.button?.smooth && document.getElementById("contact-form").scrollIntoView({ behavior: "smooth" });}
+                        }}>{data?.content?.button?.text}</Link>
                     </div>}
                     {bannerContent && <div className='md:w-2/4'>
                         <p className="heading text-3xl lg:text-5xl ">{bannerContent?.heading}</p>

@@ -14,7 +14,7 @@ const Contact = ({ data }) => {
 
     return (
         <section className="contact mx-5 md:mx-14 xl:mx-40 lg:py-20">
-            {data?.contactDetails && <div className='contact-details grid lg:grid-cols-3'>
+            {data?.contactDetails && <div className='contact-details grid lg:grid-cols-3' id='contact-form'>
                 {data?.contactDetails.map((item, index) => {
                     return (
                         <div className="contact-detail mt-10 lg:mt-1">
@@ -32,7 +32,7 @@ const Contact = ({ data }) => {
                     )
                 })}
             </div>}
-            <div className="grid lg:grid-cols-2 mt-14">
+            <div className="grid lg:grid-cols-2 mt-14" >
                 <div className="form p-14 mt-10 lg:mt-1" >
                     <p className="heading">{data?.formHeading}</p>
                     {data?.formDetails &&
