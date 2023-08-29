@@ -158,7 +158,7 @@ const footerData={
       },
       {
         icon:<BiSolidPhone/>,
-        text: "+91 9876543210"
+        text: "+91 7022550973"
       },
       {
         icon:<BiMailSend/>,

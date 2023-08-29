@@ -29,6 +29,7 @@ import {LuChevronDown,LuChevronUp} from 'react-icons/lu';
 import about2 from "../public/image/faq.webp";
 import FaqSection from '@/components/faqSection/page';
 import SubscribeSection from '@/components/subscribeSection/page';
+import portfolio from "../public/image/portfolio.webp";
 
 const bannerData = {
   bannerDetails: [
@@ -352,6 +353,23 @@ const faqSection={
     }
   }
 }
+const portfolioData = {
+  imageColumn: {
+    image1: portfolio
+  },
+  contentColumn: {
+    subHeading: "portfolio",
+    heading: "Welcome to Our Portfolio Showcase",
+    body: [
+      "We invite you to explore a captivating realm where imagination meets expertise. Our portfolio stands as a living testament to the countless hours, creative insights, and unwavering dedication we've poured into bringing projects to life.",
+      "As you step into this world of innovation and collaboration, you'll witness the transformation of ideas into impactful realities."
+    ],
+    button: {
+      text: "View more",
+      link: "/portfolio"
+    }
+  }
+}
 const subscribeSection={
   bgImage,
   heading:"Subscribe to our Newsletter",
@@ -372,6 +390,7 @@ export default function Home() {
       {/* <TeamMemberCards data={teamMemberCards} /> */}
       <CountSection data={countSection}/>
       <FaqSection data={faqSection}/>
+      <StudioTwoColumn data={portfolioData}/>
       <SubscribeSection data={subscribeSection}/>
     </>
   )

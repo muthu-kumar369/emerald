@@ -15,10 +15,10 @@ const StudioTwoColumn = ({ data }) => {
                         {data?.imageColumn?.image2 && <div className='image-2 md:-mb-8' style={{ backgroundImage: `url(${data?.imageColumn?.image2.src})`, height: `${data?.imageColumn?.image2.height}` }}></div>}
                     </div>
                 </div>}
-                {data?.contentColumn && <div className='content-column ml-10 mt-28 lg:mt-1'>
+                {data?.contentColumn && <div className='content-column mb-6 ml-10 mt-28 lg:mt-1'>
                     <p className="sub-heading uppercase">{data?.contentColumn?.subHeading}</p>
                     <p className="heading text-2xl md:text-3xl">{data?.contentColumn?.heading}</p>
-                   {data?.contentColumn?.body && <div>
+                   {data?.contentColumn?.body && <div className='mb-5'>
                         {data?.contentColumn?.body.map((item,index)=>{
                             return(
                                 <p key={index} className="body-content pt-6">{item}</p>

@@ -12,6 +12,16 @@ export const metedata={
 } 
 const bannerDetails={
   bannerImage,
+  content: {
+    heading: "Navigating Possibilities Together: Get in Touch",
+    content: "We extend our hands to you, inviting you to share, inquire, and connect. We're not just here to respond; we're here to engage in meaningful conversations that forge relationships.",
+    button: {
+      text: " Let's Begin",
+      link: "/contact/#contact-form",
+      class: "background-primary",
+      smooth:true
+    }
+  },
   bannerDetails:[
     {
       text:"Home",
