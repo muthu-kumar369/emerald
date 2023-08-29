@@ -5,6 +5,9 @@ import Banner from '@/components/banner/page';
 import Infinitum from "../../../public/image/infinitumfoodproducts.webp";
 import Jehnsus from "../../../public/image/jehnsusmusic.webp";
 import ProjectDetails from '@/components/projectDetails';
+import SubscribeSection from '@/components/subscribeSection/page';
+import bgImage from "../../../public/image/bg_cover.webp";
+
 const bannerDetails = {
   bannerImage,
   bannerDetails: [
@@ -48,6 +51,18 @@ const projectDetails = [
     }
   }
 ]
+
+const subscribeSection={
+  bgImage,
+  heading:"Subscribe to our Newsletter",
+  text:"A small river named Duden flows by their place",
+  singleInputField:{
+    name:"feedback",
+    type:"text",
+    placeHolder:"Send your query via email"
+
+  }
+}
 const Project = ({ params }) => {
 
   const [slug, setSlug] = useState(params?.slug);
@@ -61,6 +76,7 @@ const Project = ({ params }) => {
     <>
       <Banner data={bannerDetails} bannerNav={params?.slug} heading={project?.heading}/>
       <ProjectDetails data={project}/>
+      <SubscribeSection data={subscribeSection} />
     </>
   )
 }

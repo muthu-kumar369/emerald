@@ -104,12 +104,24 @@
     margin-bottom: 20px;
 }
 .banner-slider .swiper .banner-details .banner-content .banner-button .background-primary{
-    background-color: #4986fc;
+    background-color: rgb(2, 83, 5);
     font-size: 13px;
     letter-spacing: 1px;
     font-weight: 500;
     padding: 5px 10px;
     border-radius: 5px;
+    transition: 0.3s all ease-in-out;
+}
+.banner-slider .swiper .banner-details .banner-content .banner-button:hover .background-primary{
+    background-color:white;
+    color:  rgb(2, 83, 5);
+    font-weight: 500;
+    border: 2px solid rgb(2, 83, 5);
+}
+.banner-slider .swiper .banner-details .banner-content .banner-button:hover .background-white{
+    background-color:rgb(2, 83, 5);
+    color: white ;
+    font-weight: 500;
 }
 .banner-slider .swiper .banner-details .banner-content .banner-button .background-white{
     background-color: #fff;
@@ -118,8 +130,10 @@
     font-weight: 500;
     padding: 5px 10px;
     border-radius: 5px;
-    color: black;
+    color: rgb(2, 83, 5);
     margin-left: 4px;
+    transition: 0.3s all ease-in-out;
+    border: 2px solid rgb(2, 83, 5);
 }
 /* Slider end */
 
@@ -138,6 +152,7 @@
 .banner .banner-image .banner-content .heading{
     line-height: 1.2;
     font-weight: 700;
+    text-transform: capitalize;
 }
 .banner .banner-image .banner-content .body-content{
     font-size: 18px;
@@ -146,12 +161,19 @@
     margin-bottom: 10px;
 }
 .banner .banner-image .banner-content .button{
-    background-color: #4986fc;
+    background-color: rgb(2, 83, 5);
     font-size: 13px;
     letter-spacing: 1px;
     font-weight: 500;
     padding:12px;
     border-radius: 5px;
+    transition: 0.3s all ease-in-out;
+    border: 1px solid rgb(2, 83, 5) ;
+}
+.banner .banner-image .banner-content .button:hover{
+    background-color: white;
+    color: rgb(2, 83, 5);
+    font-weight: 800;
 }
 .banner .banner-image .banner-content .banner-nav{
     font-size: 16px;
