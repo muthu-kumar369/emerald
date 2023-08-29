@@ -18,6 +18,15 @@ export const metadata={
 }
 const bannerDetails={
   bannerImage,
+  content: {
+    heading: "Crafting Excellence Across a Multitude of Services",
+    content: "From visionary web development and captivating app creation to meticulous branding and strategic marketing, we stand ready to transform your concepts into tangible successes.",
+    button: {
+      text: "Get in Touch",
+      link: "/contact",
+      class: "background-primary"
+    }
+  },
   bannerDetails:[
     {
       text:"Home",
@@ -40,55 +49,35 @@ const serviceCards={
       icon: <FaLaptopCode />,
       heading: 'Web Development',
       body: 'A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.',
-      button: {
-        text: <BiSolidChevronRight />,
-        class: 'rounded',
-        link:"web"
-      },
+      link:"web",
       path:true
     },
     {
       icon: <MdDeveloperMode/>,
       heading: 'App Development',
       body: 'A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.',
-      button: {
-        text: <BiSolidChevronRight />,
-        class: 'rounded',
-        link:"app"
-      },
+      link:"app",
       path:true
     },
     {
       icon: <FaWordpress />,
       heading: 'Wordpress Development',
       body: 'A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.',
-      button: {
-        text: <BiSolidChevronRight />,
-        class: 'rounded',
-        link:"wordpress"
-      },
+      link:"wordpress",
       path:true
     },
     {
       icon: <TbDeviceAnalytics />,
       heading: 'Marketing',
       body: 'A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.',
-      button: {
-        text: <BiSolidChevronRight />,
-        class: 'rounded',
-        link:"marketing"
-      },
+      link:"marketing",
       path:true
     },
     {
       icon:<PiCertificateBold/>,
       heading:'Branding',
       body:'A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. ',
-      button:{
-        text:<BiSolidChevronRight/>,
-        class:'rounded',
-        link:"branding"
-      },
+      link:"branding",
       path:true
     }
   ]

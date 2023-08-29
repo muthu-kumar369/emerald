@@ -13,15 +13,22 @@
     padding: 30px;
     border-radius: 5px;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 .service-card-section .service-card-service .service-card{
     position: relative;
     background-color: white;
     padding: 30px;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     border-radius: 5px;
-    transition: all 0.3s ease;
-    box-shadow: 0px 2px 25px -16px rgba(0, 0, 0, 0.46)
+    transition: top 2s ease-out 1s;
+    box-shadow: 0px 2px 25px -16px rgba(0, 0, 0, 0.46);
+    cursor: pointer;
+}
+.service-card-section .service-card-service .service-card:hover{
+    top: -10px;
+    opacity: 0.9;
+    border: 2px solid rgb(2, 83, 5);
 }
 .service-card-section  .service-card .icon{
     color:#4986fc;

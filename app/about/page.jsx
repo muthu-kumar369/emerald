@@ -27,6 +27,7 @@ import { LuChevronDown, LuChevronUp } from 'react-icons/lu';
 // import about2 from "../../public/images/about-2.webp";
 import about2 from "../../public/image/faq.webp";
 import FaqSection from '@/components/faqSection/page';
+import SubscribeSection from '@/components/subscribeSection/page';
 
 export const metadata = {
   title: "About",
@@ -416,6 +417,17 @@ const faqSection = {
 
   }
 }
+const subscribeSection={
+  bgImage,
+  heading:"Subscribe to our Newsletter",
+  text:"A small river named Duden flows by their place",
+  singleInputField:{
+    name:"feedback",
+    type:"text",
+    placeHolder:"Send your query via email"
+
+  }
+}
 const About = () => {
   return (
     <>
@@ -424,6 +436,7 @@ const About = () => {
       {/* <TeamMemberCards data={teamMemberCards}/> */}
       <CountSection data={countSection} />
       <FaqSection data={faqSection} />
+      <SubscribeSection data={subscribeSection}/>
     </>
   )
 }

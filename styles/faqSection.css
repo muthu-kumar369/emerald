@@ -54,8 +54,8 @@
     color: #999999;
 }
 .faq-section .left-column .button,.faq-section .right-column .button{
-    background: #4986fc !important;
-    border: 1px solid #4986fc !important;
+    background: rgb(2, 83, 5) ;
+    border: 2px solid rgb(2, 83, 5) ;
     color: #fff;
     box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.1);
     font-size: 13px;
@@ -65,6 +65,12 @@
     padding: 8px 10px;
     border-radius: 4px;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.faq-section .left-column .button:hover,.faq-section .right-column .button:hover{
+    background: whitesmoke ;
+    border: 2px solid rgb(2, 83, 5) ;
+    color: rgb(2, 83, 5);
+    font-weight: 800;
 }
 .faq-section .right-column .heading{
     font-weight: 600;
